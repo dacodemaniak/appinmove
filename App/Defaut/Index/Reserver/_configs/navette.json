@@ -1,0 +1,40 @@
+{
+	"horaires": [
+		"8",
+		"11",
+		"14",
+		"17"
+	],
+	"minute": "0",
+	"jours": [
+		{
+			"long": "Lundi",
+			"short": "Lun",
+			"num": 1
+		},
+		{
+			"long": "Mardi",
+			"short": "Mar",
+			"num": 2
+		},
+		{
+			"long": "Mercredi",
+			"short": "Mer",
+			"num": 3
+		},
+		{
+			"long": "Jeudi",
+			"short": "Jeu",
+			"num": 4
+		},
+		{
+			"long": "Vendredi",
+			"short": "Ven",
+			"num": 5
+		}
+	],
+	"cout": "8.00",
+	"delta": 15,
+	"dispo": 8,
+	"nearAt": 45
+}
