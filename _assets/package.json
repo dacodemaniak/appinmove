@@ -1,0 +1,33 @@
+{
+  "name": "appinmove",
+  "author": {
+    "name": "IDea Factory"
+  },
+  "homepage": "https://github.com/dacodemaniak",
+  "version": "1.0.0",
+  "description": "Dépendances de l'application",
+  "keywords": [
+    "jquery",
+    "bootstrap",
+    "moment",
+    "animate"
+  ],
+  "devDependencies": {
+  },
+  "maintainers": [
+    {
+      "name": "Jean-Luc Aubert",
+      "email": "jean-luc.a@ideafactory.fr"
+    }
+  ],
+  "directories": {},
+  "dependencies": {
+    "bootstrap": "^4",
+    "font-awesome": "^4.7.0",
+    "jquery": "^1.11.3",
+    "jquery.maskedinput": "^1.4.1",
+    "jquery-ui-dist": "^1.12.1",
+    "animate.css": "^3.5.2",
+    "moment": "2.20.1"
+  }
+}
