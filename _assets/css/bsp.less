@@ -167,75 +167,129 @@ header{
 }
 
 #about {
-	h2{
-		text-align: center;
-		font-weight: 300;
-		span{
-			font-weight: 700;
-		}
-	}
-	article {
-		header{
-			height: 115px;
-			&.about{
-				&:before{
-					content: "";
-					display: block;
-					width: inherit;
-					height: 2px;
-					background-color: @primary_color;
-					animation-name: k2000;
-					animation-duration: 3s;
-					animation-iteration-count: 3;
-					animation-fill-mode: forwards;
-				}
-			}
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+    }
+    article {
+        header{
+            height: 115px;
+            &.about{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: @primary_color;
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-iteration-count: 3;
+                    animation-fill-mode: forwards;
+                }
+            }
 
-			&.appli{
-				&:before{
-					content: "";
-					display: block;
-					width: inherit;
-					height: 2px;
-					background-color: @secondary_color;
-					animation-name: k2000;
-					animation-duration: 3s;
-					animation-delay: 3s;
-					animation-iteration-count: 2;
-					animation-fill-mode: forwards;
-				}
-			}
-
-			&.agilite{
-				&:before{
-					content: "";
-					display: block;
-					width: inherit;
-					height: 2px;
-					background-color: lighten(@primary_color, 20%);
-					animation-name: k2000;
-					animation-duration: 3s;
-					animation-delay: 6s;
-					animation-iteration-count: 1;
-					animation-fill-mode: forwards;
-				}
-			}
-		}
-	}
-	p{
-		font-size: 1.5rem;
-		text-align: justify;
-		letter-spacing: 0.1em;  
-	}
-	footer{
-		.btn.btn-default.btn-lg.see-more{
-			display: block;
-			width: 12.5em;
-			margin: 0 auto;
-		}
-	}
+        }
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+        letter-spacing: 0.1em;  
+    }
+    footer{
+        .btn.btn-default.btn-lg.see-more{
+            display: block;
+            width: 12.5em;
+            margin: 0 auto;
+        }
+    }
 }
 
+#skills{
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+       }
+        header{
+            height: 115px;
+            &.applimob{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: @primary_color;
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-iteration-count: 3;
+                    animation-fill-mode: forwards;
+                }
+            }
+	
+            &.appliweb{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: @secondary_color;
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-delay: 3s;
+                    animation-iteration-count: 2;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            &.formation{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: lighten(@primary_color, 20%);
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-delay: 6s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    
+}
+
+#team{
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+        header{
+            height : 115px;
+        }
+    }
+}
+
+
+#sponsors{
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+        header{
+            height : 115px;
+        }
+    }
+}
 #contact{
 	h2{
 		text-align: center;
@@ -357,3 +411,4 @@ background: -webkit-linear-gradient(top, @color - #010101 0%, @color - #121212 5
 		width: 100%;
 	 }
  }
+ 
