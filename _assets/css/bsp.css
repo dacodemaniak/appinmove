@@ -146,7 +146,38 @@ header.top h1.titre {
   animation-iteration-count: 3;
   animation-fill-mode: forwards;
 }
-#about article header.appli:before {
+#about p {
+  font-size: 1.5rem;
+  text-align: justify;
+  letter-spacing: 0.1em;
+}
+#about footer .btn.btn-default.btn-lg.see-more {
+  display: block;
+  width: 12.5em;
+  margin: 0 auto;
+}
+#skills h2 {
+  text-align: center;
+  font-weight: 300;
+}
+#skills h2 span {
+  font-weight: 700;
+}
+#skills header {
+  height: 115px;
+}
+#skills header.applimob:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  background-color: #333333;
+  animation-name: k2000;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+#skills header.appliweb:before {
   content: "";
   display: block;
   width: inherit;
@@ -158,7 +189,7 @@ header.top h1.titre {
   animation-iteration-count: 2;
   animation-fill-mode: forwards;
 }
-#about article header.agilite:before {
+#skills header.formation:before {
   content: "";
   display: block;
   width: inherit;
@@ -170,15 +201,25 @@ header.top h1.titre {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-#about p {
-  font-size: 1.5rem;
-  text-align: justify;
-  letter-spacing: 0.1em;
+#team h2 {
+  text-align: center;
+  font-weight: 300;
 }
-#about footer .btn.btn-default.btn-lg.see-more {
-  display: block;
-  width: 12.5em;
-  margin: 0 auto;
+#team h2 span {
+  font-weight: 700;
+}
+#team h2 header {
+  height: 115px;
+}
+#sponsors h2 {
+  text-align: center;
+  font-weight: 300;
+}
+#sponsors h2 span {
+  font-weight: 700;
+}
+#sponsors h2 header {
+  height: 115px;
 }
 #contact h2 {
   text-align: center;
