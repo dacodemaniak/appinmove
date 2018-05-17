@@ -19,6 +19,7 @@ use \App\Entities\Site\SiteEntity as Site;
 use \App\Entities\Site\SiteActiveRecord as SiteActiveRecord;
 use App\Defaut\Index\sponsors\Sponsors;
 use App\Defaut\Index\Skills\Skills;
+use App\Defaut\Index\team\Team;
 
 
 class index extends \wp\Controller\controller {
