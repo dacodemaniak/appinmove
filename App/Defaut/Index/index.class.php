@@ -17,6 +17,8 @@ use \App\Defaut\Index\Contact\Contact as Contact;
 use \wp\Database\Entities\ActiveRecords as ActiveRecords;
 use \App\Entities\Site\SiteEntity as Site;
 use \App\Entities\Site\SiteActiveRecord as SiteActiveRecord;
+use App\Defaut\Index\sponsors\Sponsors;
+use App\Defaut\Index\Skills\Skills;
 
 
 class index extends \wp\Controller\controller {
@@ -107,7 +109,11 @@ class index extends \wp\Controller\controller {
 		
 		$this->about = new \App\Defaut\Index\About\About();
 		
-		$this->contact = new Contact();
+		$this->skills = new Skills();
+		
+		$this->team = new Team();
+		
+		$this->sponsors = new Sponsors();
 	}
 	
 	/**
