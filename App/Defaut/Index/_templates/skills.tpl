@@ -7,7 +7,7 @@
 
 	<section id="skills" class="row inner-section">
 		<header>
-			<h2>B&SP <span>Skills</span></h2>
+			<h2><span>Skills</span></h2>
 		</header>
 		
 		<div class="container">
