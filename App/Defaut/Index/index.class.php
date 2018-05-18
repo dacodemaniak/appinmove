@@ -42,6 +42,24 @@ class index extends \wp\Controller\controller {
 	private $contact;
 	
 	/**
+	 * Instance d'un objet de type Team
+	 * @var \Team
+	 */
+	private $team;
+	
+	/**
+	 * Instance d'un objet de type Skills
+	 * @var \Skills
+	 */
+	private $skills;
+	
+	/**
+	 * Instance d'un objet de type Sponsors
+	 * @var \Sponsors
+	 */
+	private $sponsors;
+	
+	/**
 	 * Insancie le contrôleur par défaut
 	 * @param Request $data
 	 */
@@ -99,6 +117,27 @@ class index extends \wp\Controller\controller {
 	 */
 	public function getContact(){
 		return $this->contact;
+	}
+	
+	/**
+	 * Retourne l'instance de l'objet Team
+	 */
+	public function getTeam(){
+	    return $this->team;
+	}
+	
+	/**
+	 * Retourne l'instance de l'objet Skills
+	 */
+	public function getSkills(){
+	    return $this->skills;
+	}
+	
+	/**
+	 * 
+	 */
+	public function getSponsors(){
+	    return $this->sponsors;
 	}
 	
 	/**

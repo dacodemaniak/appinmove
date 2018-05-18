@@ -12,4 +12,10 @@
 
 {include file=$index->getAbout()->getTemplateName() index=$index->getAbout()}
 
+{include file=$index->getSkills()->getTemplateName() index=$index->getSkills()}
+
+{include file=$index->getTeam()->getTemplateName() index=$index->getTeam()}
+
+{include file=$index->getSponsors()->getTemplateName() index=$index->getSponsors()}
+
 {include file=$index->getContact()->getTemplateName() index=$index->getContact()}
