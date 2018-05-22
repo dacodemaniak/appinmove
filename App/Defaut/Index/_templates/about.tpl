@@ -1,6 +1,6 @@
 	<section id="about" class="row inner-section">
 		<header>
-			<h2><span>Business</span> & Strategy Partners</h2>
+			<h2><span>App'inMove</span></h2>
 		</header>
 		
 		<div class="container">
@@ -21,8 +21,11 @@
 			{/foreach}
 		</div>
 		<footer>
-			<a class="btn btn-default btn-lg see-more" role="button" href="/about" title="{$site->title}" data-slug="About">
-				A propos de nous...
-			</a>
+			<ul class="list-unstyled list-inline">
+				<li>IMAGINER</li>
+				<li>CROIRE</li>
+				<li>CRÉER</li>
+				<li>ACCOMPAGNER</li>
+				</ul>
 		</footer>
 	</section>
