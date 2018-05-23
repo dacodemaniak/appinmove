@@ -4,7 +4,7 @@
 * @package Defaut\Index
 * @version 1.0
 **}
-
+background-color: #8177E6
 	<section id="contact" class="row inner-section">
 		<header>
 			<h2><span>Contactez nous</span></h2>

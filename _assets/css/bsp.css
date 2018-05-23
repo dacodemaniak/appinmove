@@ -156,6 +156,10 @@ header.top h1.titre {
   width: 12.5em;
   margin: 0 auto;
 }
+#skills{
+	background-color: #8177E6;
+}
+
 #skills h2 {
   text-align: center;
   font-weight: 300;
@@ -210,6 +214,9 @@ header.top h1.titre {
 }
 #team h2 header {
   height: 115px;
+}
+#sponsors{
+	background-color: #E32444;
 }
 #sponsors h2 {
   text-align: center;
