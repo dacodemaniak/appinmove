@@ -21,11 +21,5 @@
 			{/foreach}
 		</div>
 		<footer>
-			<ul class="list-unstyled list-inline">
-				<li>IMAGINER</li>
-				<li>CROIRE</li>
-				<li>CRÉER</li>
-				<li>ACCOMPAGNER</li>
-				</ul>
 		</footer>
 	</section>
