@@ -8,14 +8,28 @@
 namespace App\Defaut\Index\Skills;
 
 use \wp\wp as framework;
+use wp\Collections\collection;
+use \wp\Collections\item as Item;
 
 class Skills {
-	
+    /**
+     * Collection des catégories à afficher
+     * @var Collection
+     */
+    private $collection;
+    
 	/**
 	 * Nom de la vue à charger
 	 * @var string
 	 */
 	private $template;
+	
+	private $bootstrapCols = [
+	    "lg" => 12,
+	    "md" => 12,
+	    "sm" => 12,
+	    "xs" => 12
+	];
 	
 	/**
 	 * Instance du document spécifique
@@ -30,6 +44,7 @@ class Skills {
 		
 		$this->template();
 		
+		$this->collection = new Collection();
 		
 		$this->process();
 	}
@@ -40,6 +55,23 @@ class Skills {
 	 */
 	public function getTemplateName(){
 		return $this->template;
+	}
+	
+	/**
+	 * Retourne la collection des articles à traiter
+	 * @return \wp\Collections\collection
+	 */
+	public function getCollection(){
+	    return $this->collection;
+	}
+	
+	/**
+	 * Retourne la répartition de colonnes Bootstrap
+	 * @param string $media
+	 * @return number
+	 */
+	public function getBootstrapCols($media){
+	    return $this->bootstrapCols[$media];
 	}
 	
 	/**
@@ -70,10 +102,62 @@ class Skills {
 		$this->skills = new \App\Mappers\Article\articlesActiveRecord($skills);
 
 		if($select->nbRows() > 0){
-			$datas = $select->select();
-			$activeData = $datas->fetch();
-			$this->skills->setRecord($activeData);
+		    $datas = $select->select();
+		    $activeData = $datas->fetch();
+		    $activeRecord->setRecord($activeData);
+		    $item = new Item($this->collection);
+		    $item->id($activeRecord->article_slug)
+		    ->value($activeRecord)
+		    ->hydrate();
 		}
+		
+		// Article Appli
+		$about = new \App\Mappers\Article\articlesStore();
+		$data = $about->get("slug");
+		$data->searchValue("appli");
+		$clause = new \wp\Database\Mapper\clause($data);
+		$clause->type("equal");
+		$about->addClause($clause);
+		
+		$select = new \wp\Database\Query\select($about);
+		
+		$activeRecord = new \App\Mappers\Article\articlesActiveRecord($about);
+		
+		if($select->nbRows() > 0){
+		    $datas = $select->select();
+		    $activeData = $datas->fetch();
+		    $activeRecord->setRecord($activeData);
+		    $item = new Item($this->collection);
+		    $item->id($activeRecord->article_slug)
+		    ->value($activeRecord)
+		    ->hydrate();
+		}
+		
+		// Article agilité
+		$about = new \App\Mappers\Article\articlesStore();
+		$data = $about->get("slug");
+		$data->searchValue("agilite");
+		$clause = new \wp\Database\Mapper\clause($data);
+		$clause->type("equal");
+		$about->addClause($clause);
+		
+		$select = new \wp\Database\Query\select($about);
+		
+		$activeRecord = new \App\Mappers\Article\articlesActiveRecord($about);
+		
+		if($select->nbRows() > 0){
+		    $datas = $select->select();
+		    $activeData = $datas->fetch();
+		    $activeRecord->setRecord($activeData);
+		    $item = new Item($this->collection);
+		    $item->id($activeRecord->article_slug)
+		    ->value($activeRecord)
+		    ->hydrate();
+		}
+		
+		$this->bootstrapCols["lg"] = 12 / $this->collection->length();
+		$this->bootstrapCols["md"] = 12 / $this->collection->length();
+		
 	}
 	
 	/**

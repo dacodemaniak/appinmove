@@ -14,6 +14,8 @@
 
 			<!-- Affichage des compétences //-->
 			
+			
+			
 		</div>
 		
 	</section>

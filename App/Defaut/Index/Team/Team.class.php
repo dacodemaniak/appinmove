@@ -1,11 +1,11 @@
 <?php
 /**
-* @name Team.class.php Service pour la présentation de l'quipe d'Appinmove
+* @name Team.class.php Service pour la présentation de l'équipe d'Appinmove
 * @author web-Projet.com (contact@web-projet.com) Juil. 2017
-* @package App\Defaut\Index\About
+* @package App\Defaut\Index\Team
 * @version 1.0
 **/
-namespace App\Defaut\Index\team;
+namespace App\Defaut\Index\Team;
 
 use \wp\wp as framework;
 
