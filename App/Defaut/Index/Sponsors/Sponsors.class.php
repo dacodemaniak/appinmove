@@ -1,6 +1,6 @@
 <?php
 /**
-* @name Sponsors.class.php Service pour la présentation des sponsors
+* @name Sponsors.class.php Service pour la présentation des sponsors    
 * @author web-Projet.com (contact@web-projet.com) Juil. 2017
 * @package App\Defaut\Index\About
 * @version 1.0
