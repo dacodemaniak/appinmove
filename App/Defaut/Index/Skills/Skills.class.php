@@ -99,7 +99,7 @@ class Skills {
 		
 		$select = new \wp\Database\Query\select($skills);
 		
-		$this->skills = new \App\Mappers\Article\articlesActiveRecord($skills);
+		$activeRecord = new \App\Mappers\Article\articlesActiveRecord($skills);
 
 		if($select->nbRows() > 0){
 		    $datas = $select->select();
@@ -112,16 +112,16 @@ class Skills {
 		}
 		
 		// Article Appli
-		$about = new \App\Mappers\Article\articlesStore();
-		$data = $about->get("slug");
+		$skills = new \App\Mappers\Article\articlesStore();
+		$data = $skills->get("slug");
 		$data->searchValue("appli");
 		$clause = new \wp\Database\Mapper\clause($data);
 		$clause->type("equal");
-		$about->addClause($clause);
+		$skills->addClause($clause);
 		
-		$select = new \wp\Database\Query\select($about);
+		$select = new \wp\Database\Query\select($skills);
 		
-		$activeRecord = new \App\Mappers\Article\articlesActiveRecord($about);
+		$activeRecord = new \App\Mappers\Article\articlesActiveRecord($skills);
 		
 		if($select->nbRows() > 0){
 		    $datas = $select->select();
@@ -134,16 +134,16 @@ class Skills {
 		}
 		
 		// Article agilité
-		$about = new \App\Mappers\Article\articlesStore();
-		$data = $about->get("slug");
+		$skills = new \App\Mappers\Article\articlesStore();
+		$data = $skills->get("slug");
 		$data->searchValue("agilite");
 		$clause = new \wp\Database\Mapper\clause($data);
 		$clause->type("equal");
-		$about->addClause($clause);
+		$skills->addClause($clause);
 		
-		$select = new \wp\Database\Query\select($about);
+		$select = new \wp\Database\Query\select($skills);
 		
-		$activeRecord = new \App\Mappers\Article\articlesActiveRecord($about);
+		$activeRecord = new \App\Mappers\Article\articlesActiveRecord($skills);
 		
 		if($select->nbRows() > 0){
 		    $datas = $select->select();
