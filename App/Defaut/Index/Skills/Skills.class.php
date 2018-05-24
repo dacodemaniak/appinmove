@@ -8,7 +8,7 @@
 namespace App\Defaut\Index\Skills;
 
 use \wp\wp as framework;
-use wp\Collections\collection;
+use wp\Collections\collection as Collection;
 use \wp\Collections\item as Item;
 
 class Skills {
