@@ -217,6 +217,7 @@ header.top h1.titre {
 }
 #sponsors{
 	background-color: #E32444;
+	background-image: url(appinmove/_assets/images/sponsors.png);
 }
 #sponsors h2 {
   text-align: center;
