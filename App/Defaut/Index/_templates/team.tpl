@@ -13,8 +13,8 @@
 		<div class="container">
 
 			<!-- Affichage de l'équipe //-->
-            <figure class="trombinoscope col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <img src="./_assets/images/{$index->get()->image}" alt="{$index->get()->title}" class="img-responsive">
+            <figure class="img-team trombinoscope col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <img src="./_assets/images/team.png" alt="{$index->get()->title}" class="img-responsive">
                 <figcaption>
                 
                 </figcaption>
