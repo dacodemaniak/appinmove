@@ -8,6 +8,10 @@
 /**
  * @var secondary_color : Couleur secondaire
  */
+ .img-sponsor{
+ 	width: 80%;
+ }
+ 
 body {
   font-family: "Source Sans Pro";
   font-weight: 400;
@@ -219,7 +223,7 @@ header.top h1.titre {
 }
 #sponsors{
 	background-color: #fd5f7b;
-	background-image: url(appinmove/_assets/images/sponsors.png);
+	min-height: auto;
 }
 #sponsors h2 {
   text-align: center;
@@ -227,6 +231,7 @@ header.top h1.titre {
 }
 #sponsors h2 span {
   font-weight: 700;
+  background-image: url(appinmove/_assets/images/sponsors.png);
 }
 #sponsors h2 header {
   height: 115px;
@@ -259,6 +264,10 @@ header.top h1.titre {
 }
 #contact .trombinoscope:hover figcaption {
   top: 60%;
+}
+.container{
+	display:flex;
+	justify-content: center;
 }
 /**
  * MIXINS
