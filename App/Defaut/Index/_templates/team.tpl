@@ -20,4 +20,4 @@
                 </figcaption>
 		</div>
 		
-	</section>
+	</section>                 

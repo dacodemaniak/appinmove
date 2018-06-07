@@ -131,6 +131,11 @@ header.top h1.titre {
 #activities .box-container .box-items-content ul li.unactive {
   display: none;
 }
+#activities{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 #about h2 {
   text-align: center;
   font-weight: 300;
@@ -164,6 +169,8 @@ header.top h1.titre {
 }
 #skills{
 	background-color: #8177E6;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #skills h2 {
@@ -214,6 +221,8 @@ header.top h1.titre {
 
 #team{
 	min-height: auto;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 #team h2 {
   text-align: center;
@@ -228,6 +237,8 @@ header.top h1.titre {
 #sponsors{
 	background-color: #fd5f7b;
 	min-height: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 #sponsors h2 {
   text-align: center;
@@ -239,6 +250,10 @@ header.top h1.titre {
 }
 #sponsors h2 header {
   height: 115px;
+}
+#contact{
+	margin-left: 5%;
+	margin-right: 5%;
 }
 #contact h2 {
   text-align: center;
@@ -272,6 +287,7 @@ header.top h1.titre {
 .container{
 	display:flex;
 	justify-content: center;
+	text-align: center;
 }
 /**
  * MIXINS
