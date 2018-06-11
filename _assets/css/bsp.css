@@ -139,7 +139,7 @@ header.top h1.titre {
 #about{
 	margin-left: 5%;
 	margin-right: 5%;
-	background: url("http://appinmove.local/_assets/images/fondappinmove.png") no-repeat center center;
+	background: url("http://appinmove.local/_assets/images/fondappinmove.jpg") no-repeat center center;
 }
 
 #about h2 {
@@ -150,7 +150,6 @@ header.top h1.titre {
 }
 #about h2 span {
   font-weight: 700;
-  background-image: url("appinmove/_assets/images/fondappinmove.png");
 }
 #about article header {
   height: 115px;
@@ -255,7 +254,6 @@ header.top h1.titre {
 }
 #sponsors h2 span {
   font-weight: 700;
-  background-image: url(appinmove/_assets/images/sponsors.png);
 }
 #sponsors h2 header {
   height: 115px;
