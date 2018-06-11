@@ -136,12 +136,21 @@ header.top h1.titre {
 	margin-right: 5%;
 }
 
+#about{
+	margin-left: 5%;
+	margin-right: 5%;
+	background: url("http://appinmove.local/_assets/images/fondappinmove.png") no-repeat center center;
+}
+
 #about h2 {
-  text-align: center;
+  text-align: left;
   font-weight: 300;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 #about h2 span {
   font-weight: 700;
+  background-image: url("appinmove/_assets/images/fondappinmove.png");
 }
 #about article header {
   height: 115px;
