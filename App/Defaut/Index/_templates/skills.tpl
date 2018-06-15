@@ -16,7 +16,7 @@
                 <div class="col-lg-{$index->getBootstrapCols("lg")} col-md-{$index->getBootstrapCols("md")} col-sm-{$index->getBootstrapCols("sm")} col-xs-{$index->getBootstrapCols("xs")}">
                     <article>
                         <header class="{$about->value()->cssClass}">
-                        <img src="./_assets/images/{$about->value()->image}">
+                        <img src="./_assets/images/{$about->value()->image}" style="width: 100px;">
                         </header>
                         </br></br></br></br></br></br></br></br>
                         <h3><i class="glyphicon glyphicon-{$about->value()->icon}"></i> {$about->value()->subtitle}</h3>
