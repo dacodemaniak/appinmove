@@ -27,7 +27,7 @@ body {
 }
 .top-bar {
   height: 3.125em;
-  color: #ff8fff;
+  color: #ffffff;
   border-radius: 3px;
   border: 1px solid #2e2e2e;
   box-shadow: 0 1px 2px 0 #333333;
@@ -171,7 +171,7 @@ header.top h1.titre {
   margin: 0 auto;
 }
 #skills{
-	background-color: #8177E6;
+	background-color: #8684a1;
 	min-height: 400px;
 }
 
@@ -201,7 +201,7 @@ header.top h1.titre {
   display: block;
   width: inherit;
   height: 2px;
-  background-color: #8177E6;
+  background-color: #8684a1;
   animation-name: k2000;
   animation-duration: 3s;
   animation-delay: 3s;
@@ -213,7 +213,7 @@ header.top h1.titre {
   display: block;
   width: inherit;
   height: 2px;
-  background-color: #8177E6;
+  background-color: #8684a1;
   animation-name: k2000;
   animation-duration: 3s;
   animation-delay: 6s;
