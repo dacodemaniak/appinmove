@@ -24,7 +24,6 @@ body
 {
     font-family: 'Lato' !important;
     font-size: 1.5em !important;
-    font-weight: 600 !important;
 }
 
 h1, h2, h3, h4
@@ -35,12 +34,13 @@ h1, h2, h3, h4
 
 h3
 {
-    font-size: 2em !important;
+    font-size: 1.5em !important;
 }
 
 p
 {
-    line-height: 20px;
+    line-height: 25px;
+
 }
 
 a
@@ -57,8 +57,10 @@ a
 .wrapper
 {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     padding-top: 10vh;
+
+    min-height: 100vh;
 }
 
 .white-divider
@@ -94,16 +96,20 @@ a
     background-color: #eeee !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a
+.myMenu-list li a:hover, .myMenu-list li.active a
 {
     color: #f57280 !important;
     background-color: #0000 !important;
-    margin-top: 3px;
+}
+
+ul
+{
+    list-style-position: inside;
 }
 
 #myNavbar
 {
-    padding-top: 7px;
+
 }
 
 #myNavbar ul li a
@@ -116,9 +122,22 @@ a
     height: auto !important;
 }
 
+#contact-nav
+{
+    color: #fff !important;
+}
+
 /*  CAROUSEL  */
 
+#myCarousel
+{
+    padding-top: 7vh;
+}
 
+.carousel-control span
+{
+    color: #fff;
+}
 
 
 
@@ -142,6 +161,10 @@ a
 {
     display: flex;
     flex-direction: column;
+}
+
+#about-text
+{
     text-align: justify;
 }
 
@@ -161,9 +184,7 @@ a
 #about-content
 {
     align-self: center;
-    min-height: 70vh;
     max-width: 80%;
-    padding: 20px 0;
     font-size: 1em;
 }
 
@@ -183,7 +204,11 @@ a
 #skills
 {
     background-color: #8784a3;
-    padding-top: 10vh;
+}
+
+#skills-content
+{
+    padding: 60px 0;
 }
 
 .skills-bloc
@@ -198,6 +223,7 @@ a
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
     max-width: 300px;
     margin: 10px;
 }
@@ -210,9 +236,18 @@ a
 #skills-footer
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
+
+#skills-footer h4
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
 
 #skills-footer .skill
 {
@@ -221,15 +256,21 @@ a
 
 }
 
+#skills-footer .skill .skill-head
+{
+    text-align: center;
+}
+
+
 
 #skills-footer .skill-head img
 {
-    height: 45px;
+    height: 150px;
 }
 
 .skill-sub-list
 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 
@@ -435,11 +476,15 @@ min-height: 100vh;
     margin: 50px 0;
     text-align: center
 }
-
+.marine-effect-hard
+{
+    border-radius: 50% 50%;
+    background-color: red;
+}
 .partner img
 {
     max-height: 25vh;
-    filter: grayscale(100%);
+    filter: opacity(70%);
 }
 
 .partner img:hover
@@ -509,6 +554,22 @@ min-height: 100vh;
 /*  RESPONSIVE DESIGN  */
 /* BIGGER */
 @media (min-width: 768px) {
+    .myMenu-list li a:hover, .myMenu-list li.active a
+    {
+        border-bottom: 1px solid #f57280;
+    }
+
+    #contact-nav
+    {
+        background-color: #f57280;
+        border-radius: 10%;
+    }
+
+
+    #about-content
+    {
+        padding: 70px 0;
+    }
 
     .navbar .navbar-nav {
         display: inline-block !important;
@@ -525,12 +586,26 @@ min-height: 100vh;
         float: right;
 
     }
+
+    #skills-footer
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
 }
 
 
 
 /* SMALLER */
 @media (max-width: 768px) { 
+
+    #contact-nav
+    {
+        color: #444 !important;
+    }
+
     #myNavbar
     {
         background-color: #eeee;
@@ -563,6 +638,18 @@ min-height: 100vh;
    #myCarousel
    {
        padding-top: 10vh;
+   }
+
+
+   #about-content
+   {
+       padding: 30px 0;
+   }
+
+
+   #skills-footer .skill .skill-head
+   {
+       text-align: left !important;
    }
 
     #skills-footer

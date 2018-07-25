@@ -1,7 +1,7 @@
 
 $(function(){
     
-    $(".navbar a, .navbar-header a").on("click", function(event){
+    $(".navbar a, .navbar-header a, #you a").on("click", function(event){
         
         event.preventDefault();
         var hash = this.hash;
