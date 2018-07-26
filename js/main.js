@@ -1,4 +1,9 @@
 
+/**
+ * Définition du mode développement ou production
+ */
+var devMode = true;
+
 $(function(){
     
     $(".navbar a, .navbar-header a, #you a").on("click", function(event){
@@ -37,8 +42,46 @@ $('#contact-form').on('change', function(event) {
 /*
 * Soumission du formulaire
 */
-$('#form-contact').on('submit', function() {
+$('#contact-form').on('submit', function(event) {
 
+    // Blocage de l'événement par défaut
+    event.preventDefault();
+
+    var api = 'http://api.appinmove.wrk/web/app_dev.php/MailProcess/';
+    if (!devMode) {
+        api = 'http://api.appinmove.com/MailProcess/'
+    }
+
+    // Récupère le données du formulaire
+    var formDatas = $(this).serializeArray();
+    var postedDatas = {};
+
+    for (var i = 0; i < formDatas.length; i++) {
+        postedDatas[formDatas[i]['name']] = formDatas[i]['value'];
+    }
+
+    $.ajax({
+        url: api,
+        data: postedDatas,
+        dataType: 'json',
+        method: 'post',
+        success: function(data) {
+            console.log('Affiche le toast avec : ' + data);
+            $.toaster({
+                message: data,
+                title: 'Message envoyé',
+                priority: 'success'
+            });
+            $('#contact-form').reset();
+        },
+        error: function(error) {
+            $.toaster({
+                message: 'Une erreur est survenue lors de l\'envoi de votre message',
+                title: 'Erreur',
+                priority: 'warning'
+            });
+        }
+    })
 });
 
 

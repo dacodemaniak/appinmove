@@ -368,24 +368,24 @@
             <form class="form" style="margin: 50px;" id="contact-form">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <input type="text" id="name" class="form-control input-lg" placeholder="Nom" required>
+                        <input name="nom" type="text" id="name" class="form-control input-lg" placeholder="Nom" required>
                     </div>
 
                     <div class="form-group col-md-6">
-                        <input type="text" id="societe" class="form-control input-lg" placeholder="Société" required>
+                        <input name="societe" type="text" id="societe" class="form-control input-lg" placeholder="Société" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <input type="email" id="email" class="form-control input-lg" placeholder="Email" required>
+                    <input name="email" type="email" id="email" class="form-control input-lg" placeholder="Email" required>
                 </div>
 
                 <div class="form-group">
-                    <input type="text" id="telephone" class="form-control input-lg" placeholder="Téléphone" required>
+                    <input name="telephone" type="text" id="telephone" class="form-control input-lg" placeholder="Téléphone" required>
                 </div>
 
                 <div class="form-group">
-                    <select class="form-control input-lg" id="objet">
+                    <select name="objet" class="form-control input-lg" id="objet">
                         <optgroup label="Objet de votre demande">
                             <option value="devis">Devis</option>
                             <option value="rappel">Rappel</option>
@@ -396,7 +396,7 @@
                 </div>
 
                 <div class="form-group">
-                    <textarea id="message" class="form-control" placeholder="Message" rows="10" required></textarea>
+                    <textarea name="message" id="message" class="form-control" placeholder="Message" rows="10" required></textarea>
                 </div>
 
                 <button type="submit" id="btn-contact" class="btn btn-default" disabled>ENVOYER</button>
@@ -439,6 +439,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="./js/jquery.toaster.js"></script>
     <script src="js/main.js"></script>
 </body>
 
