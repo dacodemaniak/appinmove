@@ -41,6 +41,7 @@ $('#form-contact').on('submit', function() {
 
 });
 
+
 function _checkForm() {
     var fields = ['name', 'societe', 'email', 'telephone'];
 
@@ -69,4 +70,16 @@ $('#message').on('keyup', function(event) {
         isComplete = true;
     }
     $('#contact-form').trigger('change');
+});
+
+/**
+ * Traitement du lien interne vers le contact sur l'option Demande de stage
+ */
+$('#you').on('click', function() {
+    // Déplacement vers le formulaire de contact
+    var anchor = $('#contact');
+    $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
+
+    // Sélection de la dernière option dans le select
+    $('#objet option:last').attr('selected', 'selected');
 });
