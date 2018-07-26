@@ -49,6 +49,13 @@ a
     color: #444 !important;
 }
 
+/**
+* Redéfinition du style em
+**/
+em {
+    font-style: normal; 
+}
+
 .clear
 {
     clear: both;
