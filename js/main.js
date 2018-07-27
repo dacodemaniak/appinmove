@@ -47,7 +47,7 @@ $('#contact-form').on('submit', function(event) {
     // Blocage de l'événement par défaut
     event.preventDefault();
 
-    var api = 'http://api.appinmove.wrk/web/app_dev.php/MailProcess/';
+    var api = 'http://api.appinmove.wrk/MailProcess/';
     if (!devMode) {
         api = 'http://api.appinmove.com/MailProcess/'
     }
