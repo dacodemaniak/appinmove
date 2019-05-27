@@ -1,0 +1,14 @@
+{
+	"root": {
+		"namespace": "::App::Defaut::Index::",
+		"class": "index",
+		"method": null,
+		"rendermode": "page"
+	},
+	"solutions/mobiles": {
+		"namespace": "::App::Solutions::Mobiles::",
+		"class": "index",
+		"method": null,
+		"rendermode": "page"
+	}
+}

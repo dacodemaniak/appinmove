@@ -1,0 +1,15 @@
+{
+	"provider": "MySQL",
+	
+	"design": {
+		"dsn": "mysql:host=127.0.0.1; port=3306; dbname=bsp_repo;",
+		"user": "bsp_db_admin",
+		"password": "9dW13s!0"
+	},
+	
+	"production": {
+		"dsn": "mysql:host=127.0.0.1; port=3306; dbname=bsp_repo;",
+		"user": "bsp_db_admin",
+		"password": "9dW13s!0"
+	}
+}

@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+/**
+ * @name bsp.less : Styles spécifiques Business Strategy Partners 
+**/
+/**
+ * @var primary_color : Couleur primaire utilisée
+ */
+/**
+ * @var secondary_color : Couleur secondaire
+ */
+ .img-sponsor{
+ 	width: 80%;
+ }
+body {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 1em;
+  color: #333333;
+}
+/**
+*	Définition des sections du one-page
+**/
+@media screen and (min-width: 1170px) {
+  .inner-section {
+    height: auto;
+  }
+}
+.top-bar {
+  height: 3.125em;
+  color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #2e2e2e;
+  box-shadow: 0 1px 2px 0 #333333;
+  border-style: solid;
+  border-width: 0 1px 0 1px;
+  border-color: transparent #222222 transparent #666666;
+  background: -moz-linear-gradient(top, #585858 0%, #4a4a4a 50%, #323232 51%, #484848 100%);
+  background: -webkit-linear-gradient(top, #585858 0%, #4a4a4a 50%, #323232 51%, #484848 100%);
+  background: linear-gradient(top, #585858 0%, #4a4a4a 50%, #323232 51%, #484848 100%);
+}
+.top-bar .slogan,
+.top-bar .label,
+.top-bar a {
+  font-size: 1.3rem;
+}
+.top-bar a {
+  color: inherit;
+  text-decoration: none;
+}
+header.top .logo {
+  position: relative;
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+}
+header.top .logo a {
+  animation: none;
+}
+header.top h1.titre {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.125em;
+  vertical-align: middle;
+}
+#main-menu-wrapper {
+  margin-left: 5%;
+  height: auto;
+  border-style: solid;
+  border-width: 0 1px 0 1px;
+  border-color: transparent #ee7eee transparent #ffc2ff;
+  background: -moz-linear-gradient(top, #ffb4ff 0%, #ffa6ff 50%, #fe8efe 51%, #ffa4ff 100%);
+  background: -webkit-linear-gradient(top, #ffb4ff 0%, #ffa6ff 50%, #fe8efe 51%, #ffa4ff 100%);
+  background: linear-gradient(top, #ffb4ff 0%, #ffa6ff 50%, #fe8efe 51%, #ffa4ff 100%);
+}
+#main-menu-wrapper .navbar-brand {
+  margin-top: -2.5em;
+  height: 0;
+  padding: 15 0;
+  line-height: normal;
+}
+#main-menu-wrapper .navbar-default {
+  background: transparent;
+  border: none;
+}
+@media screen and (min-width: 1170px) {
+  #main-menu-wrapper .navbar-default .navbar-nav {
+    margin-left: 33em !important;
+    margin-top: -8em;
+  }
+}
+#main-menu-wrapper .navbar-default .navbar-nav li > a {
+  color: #333333;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#main-menu-wrapper .topnav.navbar-default.nav ul.nav > li a {
+  font-size: 2em;
+}
+/**
+*	Affichage des activités
+**/
+@media screen and (min-width: 1170px) {
+  #activities .carousel-caption {
+    margin-bottom: 200px;
+    text-align: left;
+  }
+}
+#activities .carousel-caption h2 {
+  font-size: 2.25rem;
+  text-shadow: #333 3px 1px;
+}
+#activities .carousel-caption p {
+  font-size: 1.5rem;
+}
+#activities .box-container .box-items ul li.active {
+  opacity: 1;
+}
+#activities .box-container .box-items ul li.unactive {
+  opacity: 0.7;
+}
+#activities .box-container .box-items-content ul li.active {
+  /** Rien de spécial **/
+}
+#activities .box-container .box-items-content ul li.unactive {
+  display: none;
+}
+
+#about{
+	background: url("http://appinmove.local/_assets/images/fondappinmove.jpg") no-repeat center center;
+	min-height: 550px;
+}
+
+#about h2 {
+  text-align: left;
+  font-weight: 300;
+}
+#about h2 span {
+  font-weight: 700;
+}
+#about h3{
+	text-align: justify;
+	font-weight: 150;
+	font-family: Calibri;
+	font-size: 1.5em;
+}
+#about article header {
+  height: 115px;
+}
+#about article header.about:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  background-color: #333333;
+  animation-name: k2000;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+#about p {
+  font-size: 1.5rem;
+  text-align: justify;
+  letter-spacing: 0.1em;
+}
+#about footer .btn.btn-default.btn-lg.see-more {
+  display: block;
+  width: 12.5em;
+  margin: 0 auto;
+}
+#skills{
+	background-color: #8684a1;
+	min-height: 400px;
+}
+
+#skills h2 {
+  text-align: center;
+  font-weight: 300;
+}
+#skills h2 span {
+  font-weight: 700;
+}
+#skills header {
+  height: 115px;
+}
+#skills header.applimob:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  background-color: #8684a1;
+  animation-name: k2000;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+#skills header.appliweb:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  background-color: #8684a1;
+  animation-name: k2000;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
+#skills header.formation:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: 2px;
+  background-color: #8684a1;
+  animation-name: k2000;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+#team h2 {
+  text-align: center;
+  font-weight: 300;
+}
+#team h2 span {
+  font-weight: 700;
+}
+#team h2 header {
+  height: 115px;
+}
+#sponsors{
+	background-color: #fd5f7b;
+	min-height: auto;
+}
+#sponsors h2 {
+  text-align: center;
+  font-weight: 300;
+}
+#sponsors h2 span {
+  font-weight: 700;
+}
+#sponsors h2 header {
+  height: 115px;
+}
+
+#contact h2 {
+  text-align: center;
+  font-weight: 300;
+}
+#contact h2 span {
+  font-weight: 700;
+}
+#contact .trombinoscope {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  padding: 0;
+}
+#contact .trombinoscope figcaption {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  color: #fff;
+  border-top: solid 2px #fff;
+  top: 85%;
+  transition: top 0.5s 0s ease-in;
+}
+#contact .trombinoscope figcaption h3,
+#contact .trombinoscope figcaption h4 {
+  text-align: center;
+}
+#contact .trombinoscope:hover figcaption {
+  top: 60%;
+}
+.container{
+	display:flex;
+	justify-content: center;
+	text-align: center;
+}
+/**
+ * MIXINS
+**/
+/**
+ * Animations
+ */
+@keyframes appear {
+  0% {
+    transform: scale(-1) rotate(-180deg);
+    top: -5em;
+  }
+  100% {
+    transform: scale(0) rotate(0);
+    top: 0;
+  }
+}
+@keyframes k2000 {
+  0% {
+    width: 90%;
+  }
+  10% {
+    width: 70%;
+  }
+  20% {
+    width: 50%;
+  }
+  30% {
+    width: 30%;
+  }
+  40% {
+    width: 10%;
+  }
+  50% {
+    width: 0%;
+  }
+  60% {
+    width: 20%;
+  }
+  70% {
+    width: 40%;
+  }
+  80% {
+    width: 60%;
+  }
+  90% {
+    width: 80%;
+  }
+  100% {
+    width: 100%;
+  }
+}

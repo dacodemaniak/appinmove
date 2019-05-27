@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+
+/**
+ * @name bsp.less : Styles spécifiques Business Strategy Partners 
+**/
+
+/**
+ * @var primary_color : Couleur primaire utilisée
+ */
+@primary_color: hsla(0, 0%, 20%, 1);
+
+/**
+ * @var secondary_color : Couleur secondaire
+ */
+@secondary_color: hsla(300, 100%, 78%, 1);
+
+body{
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: 1em;
+	color: @primary_color;
+}
+
+/**
+*	Définition des sections du one-page
+**/
+.inner-section {
+	@media screen and (min-width: 1170px){
+		min-height: 450px;
+		height: auto;
+	}
+}
+
+.top-bar{
+	height: 3.125em;
+	color: @secondary_color;
+	.border;
+	.shadow;
+	.divider;
+	.gradient;
+	
+	.slogan, .label, a{
+		font-size: 1.3rem;
+	}
+	a{
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+header{
+	&.top{
+		.logo {
+			position: relative;
+			animation-name: appear;
+			animation-duration:1.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: backwards;
+			animation-timing-function: ease-in;
+			
+			a{
+				animation: none;
+			}
+		}
+		h1 {
+			&.titre{
+				font-size: 2em;
+				font-weight: 700;
+				line-height: 1.125em;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+#main-menu-wrapper{
+	.navbar-brand{
+		margin-top: -2.5em;
+		height: 0;
+		padding: 15 0;
+		line-height: normal;
+	}
+	min-height: 18.75em;
+	height: auto;
+	.divider(@secondary_color);
+	.gradient(@secondary_color);
+
+	.navbar-default{
+		background: transparent;
+		border: none;
+		.navbar-nav{
+			@media screen and (min-width: 1170px){
+				margin-left: 33em !important;
+				margin-top: -8em;
+			}
+			
+			li > a {
+				color: @primary_color;
+				font-size: 1.3em;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+		}
+	}		
+
+	.topnav{
+		&.navbar-default{
+			&.nav{
+				ul{
+					&.nav > li{
+						a{
+							font-size: 2em;
+						}
+						
+					}
+				}
+			}
+		}
+	}
+}
+
+/**
+*	Affichage des activités
+**/
+#activities{
+	.carousel-caption{
+		@media screen and (min-width: 1170px){
+			margin-bottom: 200px;
+			text-align: left;
+		}	
+		h2{
+			font-size: 2.25rem;
+			text-shadow: #333 3px 1px;
+		}
+
+		p{
+			font-size: 1.5rem;
+
+		}
+	}
+	.box-container{
+		.box-items{
+			ul {
+				li {
+					&.active{
+						opacity: 1;
+					}
+					&.unactive{
+						opacity: 0.7;
+					}
+				}
+			}
+		}
+		.box-items-content{
+			ul{
+				li{
+					&.active{
+						/** Rien de spécial **/
+					}
+					&.unactive{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+#about {
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+    }
+    article {
+        header{
+            height: 115px;
+            &.about{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: @primary_color;
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-iteration-count: 3;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+        }
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+        letter-spacing: 0.1em;  
+    } 
+    footer{
+        .btn.btn-default.btn-lg.see-more{
+            display: block;
+            width: 12.5em;
+            margin: 0 auto;
+        }
+    }
+}
+
+#skills{
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+       }
+        header{
+            height: 115px;
+            &.applimob{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: @primary_color;
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-iteration-count: 3;
+                    animation-fill-mode: forwards;
+                }
+            }
+	
+            &.appliweb{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: @secondary_color;
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-delay: 3s;
+                    animation-iteration-count: 2;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            &.formation{
+                &:before{
+                    content: "";
+                    display: block;
+                    width: inherit;
+                    height: 2px;
+                    background-color: lighten(@primary_color, 20%);
+                    animation-name: k2000;
+                    animation-duration: 3s;
+                    animation-delay: 6s;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    
+}
+
+#team{
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+        header{
+            height : 115px;
+        }
+    }
+}
+
+
+#sponsors{
+    h2{
+        text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 700;
+        }
+        header{
+            height : 115px;
+        }
+    }
+}
+#contact{
+	h2{
+		text-align: center;
+		font-weight: 300;
+		span{
+			font-weight: 700;
+		}
+	}
+	
+	.trombinoscope{
+		position:relative;
+		height: 330px;
+		overflow: hidden;
+		padding: 0;
+		
+		figcaption{
+			position: absolute;
+			width: 100%;
+			background-color: hsla(0, 0%, 20%, .7);
+			color: #fff;
+			border-top: solid 2px #fff;
+			top: 85%;
+			
+			transition: top 0.5s 0s ease-in;
+
+			h3, h4{
+				text-align: center;
+			}
+		}
+
+		&:hover figcaption{
+			top: 60%;
+		} 
+		
+	}
+}
+/**
+ * MIXINS
+**/
+.shadow(@color: @primary_color){
+  	box-shadow: 0 1px 2px 0 @color;
+}
+
+ .border(@radius:3px, @border-color: @primary_color) {
+  	border-radius: @radius;
+  	border: 1px solid @border-color - #050505;
+}
+
+.divider(@color: @primary_color) {
+  border-style: solid;
+  border-width: 0 1px 0 1px;
+  border-color: transparent @color - #111 transparent @color + #333;
+}
+
+.gradient(@color: @primary_color) {
+	background: -moz-linear-gradient(top, @color + #252525 0%, @color + #171717 50%, @color - #010101 51%, @color + #151515 100%);	
+	background: -webkit-linear-gradient(top, @color + #252525 0%, @color + #171717 50%, @color - #010101 51%, @color + #151515 100%);	
+  	background: linear-gradient(top, @color + #252525 0%, @color + #171717 50%, @color - #010101 51%, @color + #151515 100%);
+}
+
+.hovereffect(@color: @primary_color) {
+background: -moz-linear-gradient(top, @color - #010101 0%, @color - #121212 50%, @color - #222222 51%, @color - #050505 100%);
+background: -webkit-linear-gradient(top, @color - #010101 0%, @color - #121212 50%, @color - #222222 51%, @color - #050505 100%);
+  background: linear-gradient(top, @color - #010101 0%, @color - #121212 50%, @color - #222222 51%, @color - #050505 100%);
+}
+
+.textcolor(@txtcolor) when (lightness(@txtcolor) >= 50%) {
+  color: @txtcolor;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+/**
+ * Animations
+ */
+ @keyframes appear {
+ 	0%{
+ 		transform: scale(-1) rotate(-180deg);
+ 		top: -5em;
+ 	}
+ 	
+ 	100%{
+ 		transform: scale(0) rotate(0);
+ 		top: 0;
+ 	}
+ }
+
+ @keyframes k2000{
+	 0%{
+		width: 90%;
+	 }
+	 10%{
+		width: 70%;
+	 }
+	 20%{
+		width: 50%;
+	 }
+	 30%{
+		width: 30%;
+	 }
+	 40%{
+		width: 10%;
+	 }
+	 50%{
+		width: 0%;
+	 }
+	 60%{
+		width: 20%;
+	 }
+	 70%{
+		width: 40%;
+	 }
+	 80%{
+		width: 60%;
+	 }
+	 90%{
+		width: 80%;
+	 }
+	 100%{
+		width: 100%;
+	 }
+ }
+ 
